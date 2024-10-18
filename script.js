@@ -15,6 +15,10 @@ function generaProves() {
 
     if (participant1 && participant2) {
         const parella = `${participant1}-${participant2}`;
+        // Guardar els noms a localStorage
+        localStorage.setItem('lastParticipant1', participant1);
+        localStorage.setItem('lastParticipant2', participant2);
+
         // Mirem si ja hi ha una prova guardada per aquesta parella
         let repte = localStorage.getItem(parella);
 
@@ -32,3 +36,22 @@ function generaProves() {
         alert('Introduïu els noms dels participants');
     }
 }
+
+// Funció per carregar els últims noms utilitzats
+function carregaNoms() {
+    const lastParticipant1 = localStorage.getItem('lastParticipant1');
+    const lastParticipant2 = localStorage.getItem('lastParticipant2');
+
+    if (lastParticipant1) {
+        document.getElementById('participant1').value = lastParticipant1;
+    }
+
+    if (lastParticipant2) {
+        document.getElementById('participant2').value = lastParticipant2;
+    }
+
+    generaProves();
+}
+
+// Executar la funció de càrrega de noms quan es carrega la pàgina
+window.onload = carregaNoms;
