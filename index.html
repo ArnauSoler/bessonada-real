@@ -8,12 +8,23 @@
 </head>
 <body>
     <div class="container">
+        <!-- Imatge estatica dels celebrants -->
+        <div class="header-image">
+            <img src="festa-arnau-guillem.jpeg" alt="Arnau i Guillem celebrant l'aniversari">
+        </div>
+
         <h1>Proves d'aniversari</h1>
         <p>Introduïu els noms dels participants</p>
-        <input type="text" id="participant1" placeholder="Participant 1">
-        <input type="text" id="participant2" placeholder="Participant 2">
+
+        <!-- Camps per introduir els noms dels participants -->
+        <div class="inputs">
+            <input type="text" id="participant1" placeholder="Participant 1">
+            <input type="text" id="participant2" placeholder="Participant 2">
+        </div>
+
         <button onclick="generaProves()">Generar Proves</button>
 
+        <!-- Espai on es mostraran les proves -->
         <div class="reptes" id="reptes"></div>
     </div>
 

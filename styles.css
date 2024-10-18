@@ -8,15 +8,46 @@ body {
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input {
+.header-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.inputs {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
     padding: 10px;
     margin: 5px;
+    width: calc(50% - 20px);
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
+    text-align: center;
 }
 
 button {
@@ -37,13 +68,35 @@ button:hover {
     margin-top: 20px;
     font-size: 18px;
     color: #555;
+    text-align: left;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
 }
 
 h3 {
     font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.photo-section {
+    margin-top: 30px;
+}
+
+.photo-preview {
+    margin-top: 20px;
+}
+
+.photo-preview img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #007BFF;
 }
